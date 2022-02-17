@@ -1,0 +1,17 @@
+/* calculation section style */
+.calc-height{
+    height: 625px;
+}
+/*notify-section style*/
+.notify-section{
+    width: 25%;
+    margin: 0 auto;
+}
+.notify{
+    color: red;
+    background-color:#FFFACD;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 2px;
+    display: none;
+}
