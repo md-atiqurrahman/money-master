@@ -29,7 +29,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
         const clothesInputNumber = getInputNumber('clothes-input');
         const incomeInputNumber = getInputNumber('income-input');
 
-        if(foodInputNumber && rentInputNumber && clothesInputNumber && incomeInputNumber > 0){
+        if(foodInputNumber > 0 && rentInputNumber > 0 && clothesInputNumber > 0 && incomeInputNumber > 0){
             //update totall expenses
             const totalCost = foodInputNumber + rentInputNumber + clothesInputNumber;
         
@@ -60,8 +60,8 @@ document.getElementById('save-btn').addEventListener('click',function(){
     const incomeInputNumber = getInputNumber('income-input');
     const totallBalance = document.getElementById('totall-balance');
     const totallBalanceNumber= parseFloat(totallBalance.innerText);
-
-    if(saveInputNumber && incomeInputNumber && totallBalanceNumber>0){
+  
+    if(saveInputNumber > 0  && incomeInputNumber > 0 && totallBalanceNumber > 0){
          // update saving amount
          const incomePercentage = incomeInputNumber / saveInputNumber;
          const savingAmount = document.getElementById('saving-amount');
@@ -78,9 +78,12 @@ document.getElementById('save-btn').addEventListener('click',function(){
          const remainingBalance = document.getElementById('remaining-balance');
          remainingBalance.innerText = remainingBalanceNumber;
          hideErrorMessage();
-        }
+        };
     }
+       
     else{
         showErrorMessage('empty-alert','negative-number','more-expenses','saving-alert');
-       }  
-})
+       };  
+
+    
+});
