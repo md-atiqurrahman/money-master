@@ -24,20 +24,20 @@
                  <div class="calc-height text-center bg-slate-100 rounded">
                     <div>
                         <h3 class="mt-1 text-xl  font-semibold mb-4">Income</h3>
-                        <p class="text-lg">Income: <input class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text" name="" id=""></p>
+                        <p class="text-lg">Income: <input id="income-input" class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text" name="" ></p>
                     </div>
                     <div>
                         <h3 class=" text-xl  font-semibold mb-4">Expenses</h3>
-                        <p class="text-lg ml-4">Food: <input class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text" name="" id=""></p>
-                        <p class="text-lg ml-5">Rent: <input class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text" name="" id=""></p>
-                        <p class="text-lg">Clothes: <input class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text" name="" id=""></p>
+                        <p class="text-lg ml-4">Food: <input id="food-input" class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text" name=""></p>
+                        <p class="text-lg ml-5">Rent: <input id="rent-input" class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text" name=""></p>
+                        <p class="text-lg">Clothes: <input  id="clothes-input" class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text" name=""></p>
                     </div>
                      <div>
-                        <button class="ml-12 mt-2 bg-sky-400 px-16 text-white text-lg font-semibold rounded py-2">Calculate</button>
+                        <button id="calculate-btn" class="ml-12 mt-2 bg-sky-400 px-16 text-white text-lg font-semibold rounded py-2">Calculate</button>
                      </div>
                      <div class="mt-4 ml-7">
-                        <h3 class=" text-xl  font-semibold mb-4">Total Expenses: 5500</h3>
-                        <h3 class=" text-xl  font-semibold mb-4">Balance: 4500</h3>
+                        <h3 class=" text-xl  font-semibold mb-4">Total Expenses: <span id="totall-expenses" >5500</span> </h3>
+                        <h3 class=" text-xl  font-semibold mb-4">Balance:<span id="totall-balance"> 4500</span> </h3>
                      </div>
                      <div>
                         <div class="text-lg ml-20">Save: 
@@ -52,7 +52,6 @@
                      </div>
                      </div>
                  </div>
-                  <!-- showing error message -->
                   <div class="notify-section text-center">
                     <p class="notify">Please input a number</p>
                     <p class="notify">Please input a number greater than 0</p>
