@@ -36,25 +36,25 @@
                         <button id="calculate-btn" class="ml-12 mt-2 bg-sky-400 px-16 text-white text-lg font-semibold rounded py-2">Calculate</button>
                      </div>
                      <div class="mt-4 ml-7">
-                        <h3 class=" text-xl  font-semibold mb-4">Total Expenses: <span id="totall-expenses" >5500</span> </h3>
-                        <h3 class=" text-xl  font-semibold mb-4">Balance:<span id="totall-balance"> 4500</span> </h3>
+                        <h3 class=" text-xl  font-semibold mb-4">Total Expenses:<span id="totall-expenses">00</span> </h3>
+                        <h3 class=" text-xl  font-semibold mb-4">Balance:<span id="totall-balance">00</span> </h3>
                      </div>
                      <div>
                         <div class="text-lg ml-20">Save: 
-                            <input class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold w-1/4" type="text" name="" id="">
+                            <input id="save-input" class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold w-1/4" type="text" name="" >
                             <span>%</span>
-                            <button class="mr-8 bml-12 mt-2 bg-sky-400 px-8 text-white text-lg font-semibold rounded py-1">Save</button>
+                            <button id="save-btn" class="mr-8 bml-12 mt-2 bg-sky-400 px-8 text-white text-lg font-semibold rounded py-1">Save</button>
                         </div>
                      </div>
                      <div class="mt-2 ml-7">
-                        <h3 class=" text-xl font-semibold mb-2">Saving Amount: 2000 </h3>
-                        <h3 class=" text-xl font-semibold mb-2">Remaining Balance: 2500  </h3>
+                        <h3 class=" text-xl font-semibold mb-2">Saving Amount: <span id="saving-amount">00</span> </h3>
+                        <h3 class=" text-xl font-semibold mb-2">Remaining Balance:<span id="remaining-balance">00</span></h3>
                      </div>
                      </div>
                  </div>
                   <div class="notify-section text-center">
                     <p class="notify">Please input a number</p>
-                    <p class="notify">Please input a number greater than 0</p>
+                    <p id="negative-number" class="notify">Please input a number greater than 0</p>
                     <p class="notify">Please input a amount less than your income</p>
                     <p class="notify">Please input a amount less than your balance</p>
                 </div>  
