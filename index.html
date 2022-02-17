@@ -24,7 +24,7 @@
                  <div class="calc-height text-center bg-slate-100 rounded">
                     <div>
                         <h3 class="mt-1 text-xl  font-semibold mb-4">Income</h3>
-                        <p class="text-lg">Income: <input id="income-input" class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text" name="" ></p>
+                        <p class="text-lg">Income: <input id="income-input" class="mb-4 ml-2 p-1 bg-slate-300 rounded text-black-500 font-semibold" type="text"></p>
                     </div>
                     <div>
                         <h3 class=" text-xl  font-semibold mb-4">Expenses</h3>
@@ -53,10 +53,10 @@
                      </div>
                  </div>
                   <div class="notify-section text-center">
-                    <p class="notify">Please input a number</p>
-                    <p id="negative-number" class="notify">Please input a number greater than 0</p>
-                    <p class="notify">Please input a amount less than your income</p>
-                    <p class="notify">Please input a amount less than your balance</p>
+                    <p id="empty-alert" class="notify">Your Income or Balance field is empty</p>
+                    <p id="negative-number" class="notify">Please input a number and number must be greater than 0 or your Food/Rent/Clothes field is empty</p>
+                    <p id="more-expenses" class="notify">Your Expenses is more than your Income</p>
+                    <p id="saving-alert" class="notify">Your Saving Amount is greater than your Balance</p>
                 </div>  
           </section>
     </main>
