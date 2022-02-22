@@ -19,15 +19,18 @@ function getInputNumber(inputId){
     const inputNumber = parseFloat(inputText);
  //clear input field
     input.value = '';
-    return inputNumber;
-   
+    return inputNumber;  
+}
+function incomeField(){
+    const incometFieldValue= getInputNumber('income-input');
+    return incometFieldValue;
 }
 // add event handler in calculate button
 document.getElementById('calculate-btn').addEventListener('click',function(){
         const foodInputNumber = getInputNumber('food-input');
         const rentInputNumber = getInputNumber('rent-input');
         const clothesInputNumber = getInputNumber('clothes-input');
-        const incomeInputNumber = getInputNumber('income-input');
+        const incomeInputNumber = incomeField();
 
         if(foodInputNumber > 0 && rentInputNumber > 0 && clothesInputNumber > 0 && incomeInputNumber > 0){
             //update totall expenses
@@ -48,6 +51,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
                 const totallBalance = document.getElementById('totall-balance');
                 totallBalance.innerText = balance;
                 hideErrorMessage();
+                document.getElementById('income-input').value = incomeInputNumber;
             }  
         }
         else{
@@ -57,7 +61,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
 //add event handler in save button
 document.getElementById('save-btn').addEventListener('click',function(){
     const saveInputNumber = getInputNumber('save-input');
-    const incomeInputNumber = getInputNumber('income-input');
+    const incomeInputNumber = incomeField();
     const totallBalance = document.getElementById('totall-balance');
     const totallBalanceNumber= parseFloat(totallBalance.innerText);
   
